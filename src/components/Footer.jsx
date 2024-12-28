@@ -26,7 +26,7 @@ const Footer = () => {
           </div>
           <div className="col-md-4 mb-3">
             <h5>Follow Us</h5>
-            <a href="https://github.com/ssahibsingh" target="_blank" rel="noreferrer" className="text-white me-3">
+            <a href="https://github.com/MunazzaRaees/SC-PROJECT" target="_blank" rel="noreferrer" className="text-white me-3">
               <i className="fa fa-github fs-4"></i>
             </a>
           </div>
