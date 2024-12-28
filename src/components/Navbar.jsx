@@ -7,8 +7,8 @@ const Navbar = () => {
 
     const navbarStyle = {
         backgroundColor: '#f8f9fa', // Light background
-        padding: '1rem 0', // Vertical padding
-        position: 'sticky', // Keep the navbar at the top
+        padding: '1rem 0', // Vertical padding to ensure better visibility
+        position: 'sticky', // Keep the navbar at top section
         top: 0,
         zIndex: 1000,
     }
@@ -28,7 +28,7 @@ const Navbar = () => {
     }
 
     const activeLinkStyle = {
-        color: '#007bff', // Blue color for active links
+        color: '#007bff', // Blue color for active links 
     }
 
     const buttonStyle = {
