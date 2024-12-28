@@ -13,9 +13,9 @@ const Home = () => {
           />
           <div className="card-img-overlay d-flex align-items-center">
             <div className="container">
-              <h5 className="card-title fs-1 text fw-lighter">Fresh Picks for the Season</h5>
+              <h5 className="card-title fs-1 text fw-lighter">trendy Picks for the Season</h5>
               <p className="card-text fs-5 d-none d-sm-block ">
-                Discover the latest trends and exclusive products handpicked just for you. Shop now and elevate your style!
+                Discover the latest trends and exclusive products handpicked just for you. Shop now and elevate your style game to increase you aura points!
               </p>
             </div>
           </div>
