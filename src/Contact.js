@@ -33,7 +33,7 @@ const Contact = ({ title = "Contact Us", onSubmit }) => {
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Enter your email"
+            placeholder="Enter your email address"
             required
           />
         </div>
