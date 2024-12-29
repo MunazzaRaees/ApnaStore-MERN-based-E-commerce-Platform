@@ -3,7 +3,7 @@ import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import Register from '../src/Register';
 import '@testing-library/jest-dom';
-
+//describing the testing strategies for register component
 describe('Register Component', () => {
   test('renders title correctly', () => {
     render(<Register title="User Registration" onSubmit={jest.fn()} />);
@@ -39,16 +39,16 @@ describe('Register Component', () => {
     const mockOnSubmit = jest.fn();
     render(<Register title="User Registration" onSubmit={mockOnSubmit} />);
 
-    fireEvent.change(screen.getByLabelText(/name/i), { target: { value: 'John Doe' } });
-    fireEvent.change(screen.getByLabelText(/email/i), { target: { value: 'john@example.com' } });
+    fireEvent.change(screen.getByLabelText(/name/i), { target: { value: 'Johni Doe' } });
+    fireEvent.change(screen.getByLabelText(/email/i), { target: { value: 'johni@example.com' } });
     fireEvent.change(screen.getByLabelText(/password/i), { target: { value: 'password123' } });
     
     const submitButton = screen.getByRole('button', { name: /register/i });
     fireEvent.click(submitButton);
     
     expect(mockOnSubmit).toHaveBeenCalledWith({
-      name: 'John Doe',
-      email: 'john@example.com',
+      name: 'Johni Doe',
+      email: 'johni@example.com',
       password: 'password123',
     });
   });
