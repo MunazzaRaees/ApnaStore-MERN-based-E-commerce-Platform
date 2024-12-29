@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Footer, Navbar } from "../components";
 
 const ContactPage = () => {
-  // State to manage form inputs and success message
+  // State to manage form inputs and success message of users
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -11,7 +11,7 @@ const ContactPage = () => {
 
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  // Handle input changes
+  // Handle input changes to amke it event driven
   const handleChange = (e) => {
     const { id, value } = e.target;
     setFormData((prevData) => ({
@@ -47,7 +47,7 @@ const ContactPage = () => {
           <div className="col-md-4 col-lg-4 col-sm-8 mx-auto">
             {isSubmitted && (
               <div className="alert alert-success text-center" role="alert">
-                Message sent successfully!
+                Your message sent successfully!
               </div>
             )}
             <form onSubmit={handleSubmit}>
