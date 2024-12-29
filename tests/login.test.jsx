@@ -3,7 +3,7 @@ import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import Login from '../src/Login';
 import '@testing-library/jest-dom';
-
+//describing the testing strategies for login component
 describe('Login Component', () => {
   test('renders title correctly', () => {
     render(<Login title="User Login" onSubmit={jest.fn()} />);
@@ -37,14 +37,14 @@ describe('Login Component', () => {
     const mockOnSubmit = jest.fn();
     render(<Login title="User Login" onSubmit={mockOnSubmit} />);
 
-    fireEvent.change(screen.getByLabelText(/email/i), { target: { value: 'john@example.com' } });
+    fireEvent.change(screen.getByLabelText(/email/i), { target: { value: 'johni@example.com' } });
     fireEvent.change(screen.getByLabelText(/password/i), { target: { value: 'password123' } });
     
     const submitButton = screen.getByRole('button', { name: /login/i });
     fireEvent.click(submitButton);
     
     expect(mockOnSubmit).toHaveBeenCalledWith({
-      email: 'john@example.com',
+      email: 'johni@example.com',
       password: 'password123',
     });
   });
