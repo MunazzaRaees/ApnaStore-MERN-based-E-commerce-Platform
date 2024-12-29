@@ -18,7 +18,7 @@ const AboutPage = () => {
         <p className="lead text-center">
           Welcome to our e-commerce platform, where innovation meets convenience.
           Our mission is to provide you with a seamless shopping experience, offering
-          a curated selection of high-quality products from trusted brands. We take pride
+          a curated selection of high-quality products from trusted international brands. We take pride
           in delivering exceptional value and customer satisfaction at every step.
         </p>
 
@@ -76,7 +76,7 @@ const AboutPage = () => {
               />
               <div className="card-body">
                 <h5 className="card-title text-center">Electronics</h5>
-                <p className="text-center">Stay ahead with the latest gadgets and technology.</p>
+                <p className="text-center">Stay ahead with the latest gadgets and technology devices.</p>
               </div>
             </div>
           </div>
