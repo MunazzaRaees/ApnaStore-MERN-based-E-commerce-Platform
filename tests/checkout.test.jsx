@@ -29,7 +29,7 @@ describe('Checkout Component', () => {
     expect(itemElements[0]).toHaveTextContent("Item 1 - $20");
     expect(itemElements[1]).toHaveTextContent("Item 2 - $35");
   });
-
+// screen.getAllByText(/Item/i) might match unwanted text if there are other elements containing "Item."
   test('renders correct total price', () => {
     const items = [
       { name: "Item 1", price: 20 },
