@@ -3,7 +3,7 @@ import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import Login from '../src/Login';
 import '@testing-library/jest-dom';
-//describing the testing strategies for login component
+//describing the testing strategies for login
 describe('Login Component', () => {
   test('renders title correctly', () => {
     render(<Login title="User Login" onSubmit={jest.fn()} />);
