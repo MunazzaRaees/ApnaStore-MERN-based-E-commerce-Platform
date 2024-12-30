@@ -30,7 +30,8 @@ describe('Register Component', () => {
     
     const submitButton = screen.getByRole('button', { name: /register/i });
     fireEvent.click(submitButton);
-    
+
+    //adding error handling
     const errorMessage = screen.getByText(/please fill in all fields/i);
     expect(errorMessage).toBeInTheDocument();
   });
