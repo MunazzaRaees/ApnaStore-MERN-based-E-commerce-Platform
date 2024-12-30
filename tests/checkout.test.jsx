@@ -1,3 +1,4 @@
+
 // checkout.test.jsx
 import React from 'react';
 import { render, screen } from '@testing-library/react';
@@ -16,7 +17,7 @@ describe('Checkout Component', () => {
     const emptyCartMessage = screen.getByText(/No items in your cart/i);
     expect(emptyCartMessage).toBeInTheDocument();
   });
-
+//renders item correctly
   test('renders items correctly when items are passed', () => {
     const items = [
       { name: "Item 1", price: 20 },
