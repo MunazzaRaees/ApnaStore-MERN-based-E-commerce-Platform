@@ -23,6 +23,8 @@ describe('Checkout Component', () => {
       { name: "Item 1", price: 20 },
       { name: "Item 2", price: 35 },
     ];
+
+    // render the shopping cart
     render(<Checkout title="Shopping Cart" items={items} total={55} />);
     const itemElements = screen.getAllByText(/Item/i);
     expect(itemElements).toHaveLength(2);
